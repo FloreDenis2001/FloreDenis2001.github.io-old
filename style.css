@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+
+/* HEADER STYLE */
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-name{
+   color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 3em;
+   text-align: center;
+   margin-top: 30px;
+}
+
+li{
+    list-style: none;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* PROFILE STYLE */
+.profile{
+    background-color:#133B5C;
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-profile{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20%;
+    border-style: solid;
+    border-width: 5px;
+    border-color:#FFD700;
+}
+
+.describe-profile{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+em{
+    color:#133B5C;
+}
+
+
+/* MAIN STYLE  */
+
+
+main{
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.about-h{
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom:0px;
+}
+
+.about-line{
+    width: 200px;
+    border-color: #FFD700;
+    border-width: 10px;
+    border-style: groove;
+}
+
+.about-describe{
+    display: flex;
+    font-size:20px;
+}
+
+.personal-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.personal-head{
+    text-align: left;
+    font-size: 1.6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-table{
+    font-size: 1.4em;
+    color: #FFD700;
+  margin-right: 20px;
+}
+
+.contact{
+   font-size: 1.2em;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+input[type=range]{
+    display: block;
+    width: 70%;
+    height:150px;
+}
