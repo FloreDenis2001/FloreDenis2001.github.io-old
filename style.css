@@ -190,8 +190,7 @@ input[type=range]{
 }
 
 .card{
-    text-align: center;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .contact-head{
@@ -269,4 +268,54 @@ footer{
     color: white;
     text-align: center;
     
+}
+
+@media (min-width:640px) {
+     header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+     }
+
+     .nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+     }
+
+
+     li{
+        margin: 10px;
+     }
+
+     main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+
+     .about-me{
+       padding-top: 50px;
+        background-color: #133B5C;
+     }
+
+     .personal-details{
+        background-color: #1B2430;
+     }
+
+   .all-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+   }
+
+   .card{
+    width: 50%;
+   }
+     
+
+     
 }
