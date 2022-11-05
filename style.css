@@ -4,7 +4,7 @@ body{
 
 /* HEADER STYLE */
 header{
-    background-color: black;
+    background-color: #1B2430;
     display: flex;
     flex-direction: column;
 }
@@ -72,14 +72,16 @@ em{
 
 
 main{
-    padding: 1px;
-    background-color: black;
     color: white;
 }
 
 .about-me{
     display: flex;
     flex-direction: column;
+    background-color: #1B2430;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
 }
 
 .about-head{
@@ -92,6 +94,7 @@ main{
 
 .about-h{
     font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 50px;
     margin-bottom:0px;
 }
@@ -111,6 +114,11 @@ main{
 .personal-details{
     display: flex;
     flex-direction: column;
+    background-color: #133B5C;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
 }
 
 .table{
@@ -139,5 +147,126 @@ main{
 input[type=range]{
     display: block;
     width: 70%;
-    height:150px;
+}
+
+.skills{
+    padding: 1px;
+    background-color: #1B2430;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-img{
+    width: 250px;
+    height: 200px;
+    border-radius: 15%;
+  
+}
+
+.project{
+    padding: 1px;
+    background-color: #133B5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.head-project{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-head{
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.card{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.contact-head{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+aside{
+    padding: 1px;
+    color: white;
+}
+
+.contact-me{
+    background-color: #1B2430;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label{
+    text-align: left;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+input[type=text]{
+    width: 90%;
+    height: 35px;
+    margin: 10px;
+    background-color: #133B5C;
+    border-radius: 8px;
+    border-style: solid;
+    border-color:#FFD700;
+    border-width: 3px;
+}
+::placeholder{
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+textarea{
+    margin: 10px;
+    width: 90%;
+    background-color: #133B5C;
+    border-radius: 8px;
+    border-style: solid;
+    border-color:#FFD700;
+    border-width: 3px;
+}
+
+.send{
+    width: 30%;
+    margin: 10px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #FFD700;
+    color: #133B5C;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:#1B2430;
+    border-width: 2px;
+}
+
+footer{
+    background-color: #133B5C;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    
 }
