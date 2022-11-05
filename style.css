@@ -271,6 +271,7 @@ footer{
 }
 
 @media (min-width:640px) {
+
      header{
         display: flex;
         flex-direction: row;
@@ -315,7 +316,4 @@ footer{
    .card{
     width: 50%;
    }
-     
-
-     
 }
