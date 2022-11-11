@@ -270,7 +270,7 @@ footer{
     
 }
 
-@media (min-width:640px) {
+@media (min-width:640px) and (max-width:920px){
 
      header{
         display: flex;
@@ -316,4 +316,123 @@ footer{
    .card{
     width: 50%;
    }
+
+   input[type=text]{
+    width: 60%;
+    }
+    .contact-me{
+        align-items: center;
+    }
+    textarea{
+        width: 60%;
+    }
 }
+
+@media (min-width:920px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+     }
+     
+
+     .nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+     }
+
+
+     li{
+        margin: 10px;
+     }
+
+     .nav-bar a{
+        font-size: 1.2em;
+     }
+     
+     .head-name{
+        font-size: 3em;
+     }
+
+     
+     .img-profile{
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .describe-profile{
+        padding: 20px;
+        font-size:2.5em;
+    }
+    
+    .about-head{
+        font-size:1.6em;
+    }
+
+    .about-describe{
+        font-size: 1em;
+    }
+
+    .all-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .card{
+        width: 30%;
+    }
+
+    .personal-head{
+        font-size: 2em;
+    }
+
+    .head-project{
+        font-size: 3em;
+        margin-bottom: 2px;
+    }
+
+    input[type=text]{
+        width: 70%;
+    }
+        
+    .contact-me{
+            align-items: center;
+        }
+       
+     textarea{
+            width: 70%;
+        }
+
+        .about-line{
+            margin-bottom: 50px;
+        }
+
+        .contact-head{
+            font-size: 3em;
+        }
+
+     
+
+        .skills{
+            background-color: #133B5C;
+        }
+
+        .project{
+            background-color: #1B2430;
+        }
+
+        .contact-me{
+            background-color: #133B5C;
+        }
+
+        footer{
+            background-color:#1B2430 ;
+        }
+
+    }
