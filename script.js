@@ -1,4 +1,4 @@
-let phoneMenu=document.querySelector(".phone-icon");
+let phoneMenu=document.querySelector(".cover-menu");
 let navBar=document.querySelector(".nav-bar");
 
 phoneMenu.addEventListener("click",(e)=>{
