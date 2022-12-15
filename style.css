@@ -113,7 +113,7 @@ ul li a:hover span{
 .cover-menu:hover{
     background-color: #00ADB5;
     transition-delay:all 0.5s;
-    transition: all 0.5;
+    transition: all 0.1s;
 }
 
 .cover-menu{
