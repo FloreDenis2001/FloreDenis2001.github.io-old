@@ -1158,9 +1158,16 @@ textarea::placeholder {
     }
 
    .profile-desktop{
-      max-height: 60vh;
-      width: 80%;
-      max-width: 900px;
+      max-height: 80vh;
+      width: 90%;
+      margin-inline: 15%;
+      max-width: 100vh;
+      left: -5%;
+   }
+
+   .profile-desktop:before{
+    width: 100%;
+    left: 3%;
    }
 
     .describe {
