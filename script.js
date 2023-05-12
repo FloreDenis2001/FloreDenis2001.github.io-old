@@ -28,12 +28,23 @@ phoneMenu.addEventListener("click",(e)=>{
     }
 });
 
-// links.forEach((item)=>{
-//     // console.log(item);
-//     let click = document.getElementById(item.getAttribute("data-link"));
-//     console.log(item.getAttribute("data-link"));
-//     console.log(document.getElementById(item.getAttribute("data-link")));
-//     console.log(click);
-//     click.scrollIntoView();
 
-// })
+const target = document.querySelector('.animation-target');
+
+// Create a new Intersection Observer
+const observer = new IntersectionObserver(entries => {
+  // For each entry in the observer
+  entries.forEach(entry => {
+    // If the target element is intersecting with the viewport
+    if (entry.isIntersecting) {
+      // Add the animate.css classes to trigger the animation
+      target.classList.add('animate__animated', 'animate__fadeInUp');
+
+      // Remove the IntersectionObserver so the animation doesn't repeat
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Observe the target element
+observer.observe(target);
