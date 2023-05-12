@@ -288,32 +288,36 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: 50vh;
-    width: 20vh;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
     position: relative;
-    margin-top: 50px;
+    padding-top: 10px;
+    /* background-color: red; */
+    margin: 0px;
 }
 
 .profile-desktop {
+    height: 110vh;
+    width:75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    /* background-color: aquamarine; */
 }
 
-.profile-desktop:before,
-.profile:before {
+.profile-desktop:before
+ {
     content: " ";
     top: 0%;
-    left: -10%;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 120%;
+    width: 100%;
     background-color: var(--body-color);
     box-shadow: 0 5px 15px -7px var(--title-color);
     opacity: 0.9;
@@ -323,9 +327,13 @@ ul li {
     border: 1px var(--body-color) solid;
 }
 
+
+
 .profile-desktop:before {
-    display: none;
+    display: flex
 }
+
+
 
 .img-profile {
     width: 200px;
@@ -443,6 +451,7 @@ ul li {
 
 
 .describe-profile {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -496,6 +505,9 @@ ul li {
     text-align: center;
     padding: 15px;
 }
+.social-media li{
+    padding-bottom:50px ;
+}
 
 .caption {
     justify-content: space-between;
@@ -503,11 +515,8 @@ ul li {
 
 /* ABOUT DESCRIBE SECTION */
 .describe {
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1px;
-    padding-bottom: 20px;
+    /* background-color: black; */
+    padding: 20px 10px;
     align-items: center;
     justify-content: center;
 }
@@ -821,7 +830,7 @@ main {
 }
 
 .demo:active {
-    background-color: var(--title-color);
+background-color: var(--title-color);
 }
 
 
@@ -1050,47 +1059,21 @@ textarea::placeholder {
     .logo-name {
         font-size: 1.5em;
     }
-
-    .about {
+    
+    .profile-desktop { 
+        max-height: 50vh;
         display: flex;
         flex-direction: row;
-        padding-bottom: 150px;
+        justify-content: space-between;
     }
 
-
-    .profile {
-        width: 300px;
-        margin: 0;
-        margin-top: 10px;
-        z-index: 200;
-        height: 400px;
+    .profile-desktop:before{
+        width: 110%;
+        left: -4%;
     }
 
-    .profile:before {
-        display: none;
-    }
-
-    .profile-desktop {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .about{
-        height: 100vh;
-    }
-
-    .profile-desktop:before {
-        position: absolute;
-        left: 0%;
-        top: -5%;
-        display: flex;
-        width:90%;
-        max-height: 100vh;
-        min-height: 40vh;
-        height: auto;
-        padding: 20px 20px 40px 20px;
-        
+    .profile{
+       width: 50%;
     }
 
     .describe {
@@ -1102,15 +1085,6 @@ textarea::placeholder {
         height: 200px;
     }
    
-     .about:before{
-        height:  100%;
-     }
-
-     .about{
-        max-height: 150vh;
-        height: auto;
-     }
-
 
     .project {
         display: flex;
@@ -1170,44 +1144,19 @@ textarea::placeholder {
         width: 270px;
         height: 270px;
     }
+
+   .profile-desktop{
+      max-height: 60vh;
+      width: 80%;
+      max-width: 900px;
+   }
+
+   .profile-desktop:before{
+   }
+
+
+
   
-    .profile-desktop {
-        display: flex;
-        flex-direction: row;
-        width:600px;
-        max-width: 80%;
-        height: 60vh;
-        margin-top: -60px;
-        position: relative;
-    }
-
-    .profile {
-        margin-top: 20px;
-        margin-left: 30px;
-        height: 500px;
-    }
-
-    .profile-desktop:before {
-        display: flex;
-        min-width: 800px;
-        width: auto;
-        max-width: 900px;
-        top: 0%;
-        left:-25%;
-        max-height:60vh;
-        margin: 0;
-        padding-block: 20px;
-    
-    }
-
-    .about{
-        max-height: 100vh;
-    }
-
-
-    .profile::before {
-        display: none;
-    }
 
     .describe {
         padding-left: 60px;
@@ -1375,7 +1324,7 @@ textarea::placeholder {
 
 @media only screen and (orientation:landscape) {
 
-    .profile-desktop:before{
+    /* .profile-desktop:before{
        height: 100vh;
-    }
+    } */
 }
