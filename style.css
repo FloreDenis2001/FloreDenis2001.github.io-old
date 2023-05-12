@@ -1151,13 +1151,6 @@ textarea::placeholder {
       max-width: 900px;
    }
 
-   .profile-desktop:before{
-   }
-
-
-
-  
-
     .describe {
         padding-left: 60px;
         min-width: 400px;
@@ -1317,14 +1310,6 @@ textarea::placeholder {
         width: 150px;
         height: 50px;
     }
-
-
 }
 
 
-@media only screen and (orientation:landscape) {
-
-    /* .profile-desktop:before{
-       height: 100vh;
-    } */
-}
