@@ -1,228 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a4fb4fc945.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Portofoliu Denis</title>
 </head>
-<body>
 
-    <header>
-        <div class="menu-option">
-        <p class="logo-name"><span class="logo-letter">F</span>lore <span class="logo-letter">D</span>enis</p>
+<body>
       
-           <button class="cover-menu"><i class="phone-icon fa-solid fa-bars"></i></button>
-     
-       </div>
-        <nav class="nav-bar">
-          <ul> 
-            <li><a href="">HOME
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </a></li>
-            <li><a href="">ABOUT
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </a></li>
-            <li><a href="">SKILLS
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </a></li>
-            <li><a href="">PROJECT
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </a></li>
-            <li><a href="">CONTACT
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </a></li>
-        </ul>
+    <header  id="home">
+        <div class="menu-option  animate__animated animate__bounceInLeft animate__repeat-1 animate_duration:500ms">
+            <p class="logo-name"><span class="logo-letter">F</span>lore <span class="logo-letter">D</span>enis</p>
+
+            <button class="cover-menu"><i class="phone-icon fa-solid fa-bars"></i></button>
+
+        </div>
+        <nav class="nav-bar animate__animated animate__bounceInRight animate__repeat-1 animate_duration:500ms">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#home" >HOME</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#about" >ABOUT</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="nav-link" >SKILLS</a>
+                </li>
+
+                <li>
+                    <a href="#project" class="nav-link" >PROJECT</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </li>
+
+            </ul>
         </nav>
     </header>
-   
-    
-<aside class="about"> 
 
-    <section class="profile">
+  
 
-                 <div class="cover-profile-img" ><img class="img-profile" src="/img/profile.jpg" alt=""></div> 
-        
-        
-     <div class="describe-profile">
-            <p>I'm a <span class="animation-text">Developer</span></p>
-            <div class="social-media">
-                <div class="icon">
-                <i class="fa-brands fa-instagram"></i>
+    <aside  class="about">
+
+        <section class="profile animate__animated animate__bounceInDown animate__repeat-1 animate_duration:1000ms">
+
+            <div class="cover-profile-img"><img class="img-profile" src="/img/profile.jpg" alt=""></div>
+
+
+            <div class="describe-profile">
+                <p>I'm a <span class="animation-text">Developer</span></p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/denisflore21/" class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/FloreDenis2001" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/flore-denis-a31597209/" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
                 </div>
-                <div class="icon">
-                    <i class="fa-brands fa-github"></i>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-                
             </div>
-         </div>
-    </section>
+        </section>
 
 
-    <section class="describe">
-        <div class="about-head">
-            <h3 class="about-h"><a class="btn-about" href="">ABOUT ME</a></h3>
-            <p class="about-describe">Hello ! My name is Flore Denis . I'm a Web Developer with extensive experience for over 1 year. My expertise is to create and website design , web/mobile applications </p>
-        </div>
-    </section>
-    
-</aside>
+        <section id="about" class="describe animate__animated animate__bounceInRight animate__repeat-1 animate_duration:500ms">
+            <div class="about-head">
+                <h3 id="about-h"><a class="a-about" href="">ABOUT ME</a></h3>
+                <p class="about-describe">Hello ! My name is Flore Denis . I'm a Web Developer with extensive experience
+                    for over 1 year. My expertise is to create and website design , web/mobile applications </p>
+                <a download="" href="./cv/MyCV.pdf" "> <button class="download-cv">Download CV<i class='bx bx-download' ></i></button></a>
+                </div>
+        </section>
+
+    </aside>
 
     <main>
-      
-        <section class="personal-details">
-            <h3 class="personal-head"><a class="btn-personal" href="">Personal Details</a></h3>
-           
-            <div class="wrapper">
-            <div class="contact">
-                <div class="card-icon">
-                    <i class=" fa-solid fa-phone"></i>
+
+        <section id="about" class="personal-details">
+            <h3 id="personal-head"><a class="btn-personal" href="">Personal Details</a></h3>
+
+            <div class="wrapper animate__animated animate__bounceInLeft animate__repeat-1 animate_duration:1000ms">
+                <div class="contact c-phone">
+                    <div class="card-icon">
+                        <i class=" fa-solid fa-phone"></i>
+                    </div>
+                    <p>(+40)751621371</p>
                 </div>
-                <p>(+40)751621371</p>
-             </div>
-             <div class="contact">
-                <div class="card-icon">
-                    <i class="fa-regular fa-envelope"></i>
+                <div class="contact c-email">
+                    <div class="card-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <p>floredenis907@yahoo.com</p>
+                </div>
+
+                <div class="contact c-discord">
+                    <div class="card-icon">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+
+                    <p>DenisWay#9497</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills">
+            <h3 id="skills-head"><a class="btn-skills" href="">Skills</a></h3>
+            <div class="tehnical-skills">
+
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms ">
+                    <i class="fa-brands fa-java"></i>
+                    <span class="level">70%</span>
+                </div>
+
+
+
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms ">
+                    <i class="fa-solid fa-database"></i>
+                    <span class="level">80%</span>
+                </div>
+
+
+
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms ">
+                    <i class="fa-brands fa-html5"></i>
+                    <span class="level">90%</span>
+                </div>
+
+
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms ">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span class="level">70%</span>
+                </div>
+
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms ">
+                    <i class="fa-brands fa-js"></i>
+                    <span class="level">65%</span>
+                </div>
+
+             
+
+
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms ">
+                    <i class="fa-brands fa-react"></i>
+                    <span class="level">50%</span>
+                </div>
+
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms  ">
+                    <i class="fa-brands fa-node-js"></i>
+                    <span class="level">10%</span>
                 </div>
                
-                <p>floredenis907@yahoo.com</p>
-             </div>
-
-             <div class="contact">
-                <div class="card-icon">
-                    <i class="fa-brands fa-discord"></i>
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms ">
+                    <i class='bx bxl-c-plus-plus'></i>
+                    <span class="level">60%</span>
                 </div>
-            
-                <p>DenisWay#9497</p>
-             </div>
+              
+
+                <div class="icon-skills animate__animated animate__rollIn animate__repeat-1 animate_duration:1000ms ">
+                    <i class='bx bxl-typescript' ></i>
+                    <span class="level">50%</span>
+                </div>
             </div>
         </section>
+    </main>
 
-      
-        <section class="skills">
-            <h3 class="skills-head"><a class="btn-skills" href="">Skills</a></h3>
-            <div class="tehnical-skills">
-             
-                    <div class="icon-skills">
-                        <i class="fa-brands fa-java"></i>
-                        <span class="procentaj">70%</span>
-                    </div>
-             
+    <aside id="project" class="project-container">
+        <h3 id="head-project"><a class="a-about" href="">PROJECT</a></h3>
 
-             
-                    <div class="icon-skills">
-                        <i class="fa-solid fa-database"></i>
-                        <span>50%</span>
-                    </div>
-         
 
-            
-                    <div class="icon-skills">
-                        <i class="fa-brands fa-html5"></i>
-                        <span>80%</span>
-                    </div>
-             
-          
-                    <div class="icon-skills">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <span>60%</span>
-                    </div>
+        <section class="all-projects">
 
-                    <div class="icon-skills">
-                       <i class="fa-brands fa-js"></i>
-                        <span>30%</span>
-                    </div>
-          
+            <article class="project animate__animated animate__zoomInLeft animate__repeat-1 animate_duration:1000ms">
                 
-    
-            </div>
+               <div>
+                <img class="project-img" src="/img/carproject.jpg" alt="error-img">
+               </div> 
+               
+                <div class="caption">
+                    <p class="title-project"> Car Rental </p>
+                    <p class="describe-project">A car rental website is an online platform
+                         that allows users to rent cars from personal or business use.
+                         The website provides an interface for searching.comparing and 
+                         reserving cars</p>
+                   
+                         <div class="project-btn-container">
+                   <button class="project-btn">
+                    <p>Code</p>
+                    <i class="fa-brands fa-github"></i>
+                   </button>
+                 
+                    <button class="project-btn demo">
+                        <p>Demo</p>
+                        <i class='bx bxs-window-alt' ></i>
+                    </button>
+                      </div>
+                </div>
+
+            </article>
+
+          
+            <article class="project animate__animated animate__zoomInLeft animate__repeat-1 animate_duration:1000ms">
+                
+                <div>
+                 <img class="project-img" src="/img/movie.jpg" alt="error-img">
+                </div> 
+                
+                 <div class="caption">
+                     <p class="title-project"> Online Movie </p>
+                     <p class="describe-project">An online movie platform offers on-demand streaming
+                         of films, with a user-friendly interface, search and filter options, 
+                        and high-quality viewing experience on multiple devices.</p>
+                    
+                          <div class="project-btn-container">
+                    <button class="project-btn">
+                     <p>Code</p>
+                     <i class="fa-brands fa-github"></i>
+                    </button>
+                  
+                     <button class="project-btn demo">
+                         <p>Demo</p>
+                         <i class='bx bxs-window-alt' ></i>
+                     </button>
+                       </div>
+                 </div>
+ 
+             </article>
+ 
+             
+            <article class="project animate__animated animate__zoomInLeft animate__repeat-1 animate_duration:1000ms">
+                
+                <div>
+                 <img class="project-img" src="/img/Dental-Clinic-Logo.png" alt="error-img">
+                </div> 
+                
+                 <div class="caption">
+                     <p class="title-project"> Dental Clinic</p>
+                     <p class="describe-project">A dental clinic management website is 
+                        an online platform that helps dental clinics manage administrative 
+                        tasks such as appointment scheduling, patient records, and billing,
+                         and provides educational resources for patients.</p>
+                    
+                          <div class="project-btn-container">
+                    <button class="project-btn">
+                     <p>Code</p>
+                     <i class="fa-brands fa-github"></i>
+                    </button>
+                  
+                     <button class="project-btn demo">
+                         <p>Demo</p>
+                         <i class='bx bxs-window-alt' ></i>
+                     </button>
+                       </div>
+                 </div>
+ 
+             </article>
+
+
+             
+            <article class="project animate__animated animate__zoomInLeft animate__repeat-1 animate_duration:1000ms">
+                
+                <div>
+                 <img class="project-img" src="/img/schoolproject.jpg" alt="error-img">
+                </div> 
+                
+                 <div class="caption">
+                     <p class="title-project">School Management</p>
+                     <p class="describe-project">A school management website is an 
+                        online platform designed to assist schools, colleges, and universities in managing various administrative tasks such as student enrollment, attendance, grading, and scheduling. It may also include features such as communication tools for teachers, students, and parents, academic resources, 
+                        and online payment systems for tuition and fees.</p>
+                    
+                          <div class="project-btn-container">
+                    <button class="project-btn">
+                     <p>Code</p>
+                     <i class="fa-brands fa-github"></i>
+                    </button>
+                  
+                     <button class="project-btn demo">
+                         <p>Demo</p>
+                         <i class='bx bxs-window-alt' ></i>
+                     </button>
+                       </div>
+                 </div>
+ 
+             </article>
+
+
+             
+            <article class="project animate__animated animate__zoomInLeft animate__repeat-1 animate_duration:1000ms">
+                
+                <div>
+                 <img class="project-img" src="/img/26936-285x380.jpg" alt="error-img">
+                </div> 
+                
+                 <div class="caption">
+                     <p class="title-project"> Music Management</p>
+                     <p class="describe-project">A music management website is an online platform designed to assist musicians, music producers, and record labels in managing their music catalogs, 
+                        scheduling performances, promoting their music, and connecting with fans.</p>
+                    
+                          <div class="project-btn-container">
+                    <button class="project-btn">
+                     <p>Code</p>
+                     <i class="fa-brands fa-github"></i>
+                    </button>
+                  
+                     <button class="project-btn demo">
+                         <p>Demo</p>
+                         <i class='bx bxs-window-alt' ></i>
+                     </button>
+                       </div>
+                 </div>
+ 
+             </article>
         </section>
-  </main>
-  
-  <aside class="project">
-    <h3 class="head-project"><a class="btn-about" href="">PROJECT</a></h3>
-       
 
-<section class="all-cards">
+    </aside>
 
-    <article class="card">
-       <img  class="card-img" src="/img/e-commerce.png" alt="error-img">
-       <div class="caption">
-        <a href="" class="card-head"> E-Commerce </a>
-       </div>
-   
-    </article>
-
-    <article class="card">
-       <img  class="card-img" src="/img/26936-285x380.jpg" alt="error-img">
-       <div class="caption">
-        <a href="" class="card-head"> Music App </a>
-       </div>
-    </article>
-
-    <article class="card">
-       <img  class="card-img" src="/img/movie.jpg" alt="error-img">
-       <div class="caption">
-        <a href="" class="card-head"> Movie App </a>
-       </div>
-       
-    </article>
-
-    <article class="card">
-       <img  class="card-img" src="/img/no-project.png" alt="error-img">
-      
-       <div class="caption">
-        <a href="" class="card-head"> Bank Management </a>
-       </div> 
-    </article>
-
-
-    <article class="card">
-       <img  class="card-img" src="/img/no-project.png" alt="error-img">
-       <div class="caption">
-        <a href="" class="card-head">Fitness Center Management </a>
-       </div> 
-       
-    </article>
-
-    <article class="card">
-       <img  class="card-img" src="/img/no-project.png" alt="error-img">
-      
-       <div class="caption">
-        <a href="" class="card-head"> Car Rental System </a>
-       </div> 
-    </article>
-
-</section>
-
-</aside>
-
-<!-- 
-    <aside class="contact-me">
-        <h3 class="contact-head">CONTACT</h3>
+    
+    <aside id="contact" class="contact-me  animate__animated animate__rotateInUpLeft animate__repeat-1 animate_duration:1000ms ">
+        <h3 id="contact-head"> <a href="" class="btn-skills">CONTACT</a></h3>
       
         
             <input type="text" id="first-name" placeholder="First Name">
@@ -239,19 +352,47 @@
     
       
           
-            <input type="text" id="subject" placeholder="Subject">
 
-            <textarea name="" id="" cols="10" rows="7" placeholder="Message"></textarea>
+            <textarea name="" id="text-area" cols="10" rows="7" placeholder="Your Message" maxlength="200"></textarea>
   
-           <button class="send">Send Message</button>
+            <button submit="" class="send">Send</button>
        
-    </aside> --> 
+    </aside> 
 
 
-    <footer class="bottom-site">
-        <p>&copy;<small>Flore Denis</small></p>
-    </footer> 
+    <footer class="bottom-site animate__animated animate__fadeInLeft animate__repeat-1 animate_duration:1000ms">
+        <div class="heart"></div>
+        <p>Copyright © 2023. All rights are reserved</small></p>
+    </footer>
+
+     <div class="nav-bar-helper-bottom">
+        <nav  class="bottom-nav-bar animate__animated animate__bounceInRight animate__repeat-1 animate_duration:500ms">
+            <ul>
+                <li>
+                    <a class="bottom-nav-link active-link" href="#home" ><i class='bx bx-home-smile'></i></a>
+                </li>
+
+                <li>
+                    <a class="bottom-nav-link" href="#about" ><i class='bx bxs-user' ></i></a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="bottom-nav-link" ><i class='bx bx-book' ></i></a>
+                </li>
+
+                <li>
+                    <a href="#project" class="bottom-nav-link" ><i class='bx bxs-briefcase' ></i></a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="bottom-nav-link"><i class='bx bxs-contact' ></i></a>
+                </li>
+
+            </ul>
+        </nav>
+     </div>
 
     <script src="/script.js"></script>
 </body>
+
 </html>
