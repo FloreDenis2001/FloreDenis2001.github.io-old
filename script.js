@@ -28,23 +28,17 @@ phoneMenu.addEventListener("click",(e)=>{
     }
 });
 
+const animateMeList = document.querySelectorAll('.animate-me');
+const windowHeight = window.innerHeight;
 
-const target = document.querySelector('.animation-target');
+window.addEventListener('scroll', () => {
+  animateMeList.forEach((animateMe) => {
+    const elementPosition = animateMe.getBoundingClientRect().top;
 
-// Create a new Intersection Observer
-const observer = new IntersectionObserver(entries => {
-  // For each entry in the observer
-  entries.forEach(entry => {
-    // If the target element is intersecting with the viewport
-    if (entry.isIntersecting) {
-      // Add the animate.css classes to trigger the animation
-      target.classList.add('animate__animated', 'animate__fadeInUp');
-
-      // Remove the IntersectionObserver so the animation doesn't repeat
-      observer.unobserve(entry.target);
-    }
+    if (elementPosition < windowHeight * 0.75) {
+      animateMe.classList.add('animate__bounceInLeft');
+      animateMe.style.opacity='1';
+    } 
   });
 });
 
-// Observe the target element
-observer.observe(target);

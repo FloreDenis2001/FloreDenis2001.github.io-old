@@ -25,6 +25,8 @@
     --font-medium: 400;
 }
 
+
+
 /* SCROLL BAR */
 
 ::-webkit-scrollbar {
@@ -108,6 +110,11 @@
 
 
 
+.animate-me {
+    opacity: 0;
+}
+
+
 
 * {
     box-sizing: border-box;
@@ -119,6 +126,7 @@ body {
     background-color: var(--body-color);
     width: 100%;
 }
+
 
 a {
     text-decoration: none;
@@ -1080,6 +1088,10 @@ textarea::placeholder {
         width: 250px;
     }
 
+    .about-describe{
+        font-size: .95em;
+    }
+
     .img-profile {
         width: 200px;
         height: 200px;
@@ -1268,7 +1280,9 @@ textarea::placeholder {
         max-width: 900px;
     }
 
- 
+    .about-describe{
+        font-size: 1.2em;
+    }
 
     .title-project {
         font-size: var(--big-font-size);
