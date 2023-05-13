@@ -301,7 +301,6 @@ ul li {
     width: 100%;
     position: relative;
     padding-top: 10px;
-    /* background-color: red; */
     margin: 0px;
 }
 
@@ -501,10 +500,9 @@ ul li {
 
 /* ABOUT DESCRIBE SECTION */
 .describe {
-    /* background-color: black; */
-    padding: 20px 10px;
     align-items: center;
     justify-content: center;
+   
 }
 
 .about-head {
@@ -513,7 +511,8 @@ ul li {
     justify-content: center;
     text-align: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+
 }
 
 
@@ -999,7 +998,7 @@ textarea::placeholder {
 
 
 
-@media (min-width:640px) {
+@media (min-width:768px) {
     header {
         display: flex;
         flex-direction: row;
@@ -1058,9 +1057,7 @@ textarea::placeholder {
        width: 50%;
     }
 
-    .describe {
-        width: 250px;
-    }
+    
 
     .about-describe{
         font-size: .95em;
@@ -1086,6 +1083,11 @@ textarea::placeholder {
 
     .project-container {
         padding-block: 50px;
+    }
+
+    .describe
+    {
+        padding-left: 50px;
     }
 
 }
@@ -1134,15 +1136,15 @@ textarea::placeholder {
    .profile-desktop{
       min-height: 80vh;
       padding-block: 50px;
-      width: 90%;
+      width: 100%;
       margin-inline: 15%;
-      max-width: 100vh;
+     max-width: 110vh;
    }
 
  
 
     .describe {
-        padding-left: 60px;
+       
         min-width: 400px;
     }
 
@@ -1260,6 +1262,8 @@ textarea::placeholder {
 
     .about-describe{
         font-size: 1.2em;
+        width: 400px;
+    
     }
 
     .title-project {
