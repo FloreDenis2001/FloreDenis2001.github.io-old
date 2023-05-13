@@ -42,3 +42,37 @@ window.addEventListener('scroll', () => {
   });
 });
 
+
+function sendEmail() {
+  const name = document.getElementById('last-name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  const smtpParams = {
+    host: 'smtp.mail.yahoo.com',
+    port: 587,
+    secure: false,
+    auth: {
+      user: 'floredenis907@yahoo.com',
+      pass: 'your-email-password'
+    }
+  };
+
+  const transporter = nodemailer.createTransport(smtpParams);
+
+  const mailOptions = {
+    from: email,
+    to: 'floredenis907@yahoo.com',
+    subject: `New message from ${name}`,
+    text: message
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+}
+
