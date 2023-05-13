@@ -297,7 +297,7 @@ ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 65vh;
     width: 100%;
     position: relative;
     padding-top: 10px;
@@ -306,39 +306,17 @@ ul li {
 }
 
 .profile-desktop {
-    height: 110vh;
-    width:75%;
+    width:85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    /* background-color: aquamarine; */
-}
-
-.profile-desktop:before
- {
-    content: " ";
-    top: 0%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
     background-color: var(--body-color);
     box-shadow: 0 5px 15px -7px var(--title-color);
-    opacity: 0.9;
-    z-index: -1;
-    transition: all 0.5s;
     border-radius: 20px 20px 5px 5px;
     border: 1px var(--body-color) solid;
-}
-
-
-
-.profile-desktop:before {
-    display: flex
+    padding: 50px;
 }
 
 
@@ -1075,11 +1053,7 @@ textarea::placeholder {
         justify-content: space-between;
     }
 
-    .profile-desktop:before{
-        width: 110%;
-        left: -4%;
-    }
-
+  
     .profile{
        width: 50%;
     }
@@ -1158,17 +1132,14 @@ textarea::placeholder {
     }
 
    .profile-desktop{
-      max-height: 80vh;
+      min-height: 80vh;
+      padding-block: 50px;
       width: 90%;
       margin-inline: 15%;
       max-width: 100vh;
-      left: -5%;
    }
 
-   .profile-desktop:before{
-    width: 100%;
-    left: 3%;
-   }
+ 
 
     .describe {
         padding-left: 60px;
