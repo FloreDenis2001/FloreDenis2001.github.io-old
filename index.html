@@ -353,25 +353,19 @@
     <aside id="contact" class="contact-me">
         <h3 id="contact-head"> <a href="" class="btn-skills">CONTACT</a></h3>
       
-        <form class="contact-me">
-            <input class="animate-me animate__animated " type="text" id="first-name" placeholder="First Name">
-       
-
-  
-          
-            <input class="animate-me animate__animated " type="text" id="last-name" placeholder="Last Name">
-
-
+        <form class="contact-me" action="https://formsubmit.co/floredenis907@yahoo.com" method="POST" >
+            <input class="animate-me animate__animated " type="text" id="first-name" name="name" placeholder="Name" required>
        
          
-            <input class="animate-me animate__animated  " type="text" id="email" placeholder="Email">
-    
-      
-          
+            <input class="animate-me animate__animated  " type="text" id="email" name="email" placeholder="Email" required>
 
-            <textarea class="animate-me animate__animated " name="" id="text-area" cols="10" rows="7" placeholder="Your Message" maxlength="200"></textarea>
+            <input class="animate-me animate__animated  " type="tel" id="phone" name="phone" placeholder="Phone" required>
+    
+            <input type="hidden" id="_subject" name="_subject" value="New email from a client" required>
+          
+            <textarea class="animate-me animate__animated " name="message" id="message" cols="10" rows="7" placeholder="Your Message" maxlength="200" required></textarea>
   
-            <button onclick="sendEmail()"class="send">Send</button>
+            <button type="submit" class="send">Send</button>
         </form>
        
     </aside> 
