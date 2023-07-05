@@ -62,7 +62,7 @@ window.addEventListener('scroll', () => {
   animateMeList.forEach((animateMe) => {
     const elementPosition = animateMe.getBoundingClientRect().top;
 
-    if (elementPosition < windowHeight * 0.75) {
+    if (elementPosition < windowHeight * 0.70) {
       animateMe.classList.add('animate__bounceInLeft');
       animateMe.style.opacity='1';
     } 
